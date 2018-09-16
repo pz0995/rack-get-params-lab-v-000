@@ -26,7 +26,7 @@ def add
 end
 
   def cart(items)
-    if cart.empty? || cart = "[]"
+    if cart.empty? || if cart = "[]"
       puts"Your cart is empty"
     else
       puts cart
