@@ -1,6 +1,6 @@
 class Application
 
-  @@items = ["Apples","Carrots","Pears"]
+  @@cart = ["Apples","Carrots","Pears"]
 
   def call(env)
     resp = Rack::Response.new
@@ -18,6 +18,19 @@ class Application
     end
 
     resp.finish
+  end
+
+def add
+
+
+end
+
+  def cart(items)
+    if cart.empty?
+      puts"Your cart is empty"
+    else
+      puts cart
+    end
   end
 
   def handle_search(search_term)
